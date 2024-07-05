@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="firstName"></label>
+        <input type="text" id="firstName" required placeholder="Enter Your FirstName "><br>
+        
+        <label for="lastName"></label>
+        <input type="text" id="lastName" required placeholder="Enter Your LastName"><br>
+        
+        <label for="email"></label>
+        <input type="email" id="email" required pattern=".+@gmail\.com" placeholder="Enter your Email"><br>
+        
+        <label for="password"></label>
+        <input type="password" id="password" required placeholder="Enter Your Password"><br>
+        
+        <label for="confirmPassword"></label>
+        <input type="password" id="confirmPassword" required placeholder="confirmPassword"><br>
+        
+        <label for="dob"></label>
+        <input type="date" id="dob" required placeholder="Date of Birth" ><br>
+        
+        <button type="submit">Submit</button>
+        <p id="message"></p>
+    </form>
+
+    <script src="signup.js"></script>
+</body>
+</html>

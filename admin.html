@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>admin panel</h2>
+      <form id="adminForm" style="display: none">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required pattern=".+@gmail\.com" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+
+        <button type="submit">Update Entry</button>
+      </form>
+      <table id="usersTable" border="1">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Date of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
